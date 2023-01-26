@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: blanchedalmond;
+}
+.bradinfo{
+    padding-top: 5px;
+    text-align: left;
+}
+p{
+    padding-top: 5px;
+}
+li{
+    text-align: left;
+}
+h1{
+    border-bottom: 2px solid black;
+}
+h2{
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+}
+header, main, footer, div{
+    border: 2px;
+    margin: 1px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
+    margin: auto;
+}
+
+.box-1{
+    border-bottom: 2px solid black;
+    display: grid;
+    grid-template:
+    "a b" / 1fr 2fr;
+}
+.img-1 {
+    display: grid;
+    grid-area: a;
+}
+.bradinfo{
+    display: grid;
+    grid-area: b;
+}
+
+@media (max-width: 800px) {
+    main{
+        display: grid;
+        grid-template:
+        "a"
+        "b"      
+    }
+}
+
+.box-2{
+    border-bottom: 2px solid black;
+    display: grid;
+    grid-template:
+    "a b" / 1fr 1fr;
+}
+.MovieList{
+    display: grid;
+    grid-area: a;
+}
+.AwardList{
+    display: grid;
+    grid-area: b;
+}
+@media (max-width: 800px){
+    main{
+        display: grid;
+        grid-template:
+        "a"
+        "b"
+    }
+}
+
+
+
+
+
