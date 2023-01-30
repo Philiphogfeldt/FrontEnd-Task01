@@ -2,10 +2,22 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: blanchedalmond;
+    background-color: rgb(212, 137, 23);
 }
 html{
-    background-color: rgba(0, 0, 0, 0.397);
+    background-color: rgba(233, 2, 2, 0.397);
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+@media (max-width: 1200px){
+    body{
+        width: 100%;
+    }
 }
 .bradinfo{
     padding-top: 5px;
@@ -15,8 +27,7 @@ p{
     padding-top: 5px;
 }
 li{
-    text-align: left;
-    
+    text-align: left;   
 }
 h2{
     padding-bottom: 5px;
@@ -36,37 +47,6 @@ header, main, footer, div{
     text-align: center;
 }
 
-/* MAIN ! */
-
-body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 1024px;
-    margin: auto;
-
-}
-/* FITTKOD */
-/* 
-    display: grid;
-    grid-template:
-    "a a"
-    "b c"
-    "d e"
-    "f f"
-
-}
-@media (max-width: 800px){
-    body{
-        display: grid;
-        grid-template:
-        "a a"
-        "b c"
-        "d e"
-        "f f"
-    }
-} */
-
-/* RAD 1 */
-
 .box-1{
     border-bottom: 2px solid rgba(0, 0, 0, 0.199);
     display: grid;
@@ -82,16 +62,18 @@ body{
     grid-area: b;
 }
 
-@media (max-width: 500px) {
-    main{
+@media (max-width: 800px) {
+    .box-1{
         display: grid;
         grid-template:
         "a"
         "b" / 1fr;      
     }
+    .img-1{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
-
-/* RAD 2 */
 
 .box-2{
     border-bottom: 2px solid rgba(0, 0, 0, 0.199);
@@ -107,13 +89,14 @@ body{
     display: grid;
     grid-area: b;
 }
-@media (max-width: 500px){
-    main{
+@media (max-width: 800px){
+    .box-2{
         display: grid;
         grid-template:
         "a"
         "b";
     }
+    
 }
 
 
